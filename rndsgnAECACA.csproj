@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{9F3341AC-ED10-4330-9656-25BA11D7B0E5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>rndsgnAECACA</RootNamespace>
+    <AssemblyName>rndsgnAECACA</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AcCoreMgd">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="AcDbMgd">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="AcMgd">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
+    </Reference>
+    <!--ACA References Begin-->
+    <!--ACA Refences End-->
+    <!--AME Referebces Begin-->
+    <!--AME Reference End-->
+    <Reference Include="AecArchMgd">
+      <HintPath>..\..\..\Program Files\Autodesk\AutoCAD 2017\ACA\AecArchMgd.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="AecBaseMgd">
+      <HintPath>..\..\..\Program Files\Autodesk\AutoCAD 2017\ACA\AecBaseMgd.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="AecCoreMgd">
+      <HintPath>..\..\..\Program Files\Autodesk\AutoCAD 2017\ACA\AecCoreMgd.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>4.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>4.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>4.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="VladGeomTools">
+      <HintPath>stdLibs\VladGeomTools.dll</HintPath>
+    </Reference>
+    <Reference Include="VladMathTools">
+      <HintPath>stdLibs\VladMathTools.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Compile Include="..\..\BIGGLOBAL\Utils\utilAc\acAttributes.cs">
+      <Link>Utils\utilAc\acAttributes.cs</Link>
+    </Compile>
+    <Compile Include="..\..\BIGGLOBAL\Utils\utilAc\acBB.cs">
+      <Link>Utils\utilAc\acBB.cs</Link>
+    </Compile>
+    <Compile Include="..\..\BIGGLOBAL\Utils\utilAc\acBlocks.cs">
+      <Link>Utils\utilAc\acBlocks.cs</Link>
+    </Compile>
+    <Compile Include="..\..\BIGGLOBAL\Utils\utilAc\acChangeBlockDefintion.cs">
+      <Link>Utils\utilAc\acChangeBlockDefintion.cs</Link>
+    </Compile>
+    <Compile Include="..\..\BIGGLOBAL\Utils\utilAc\acCreateEntity.cs">
+      <Link>Utils\utilAc\acCreateEntity.cs</Link>
+    </Compile>
+    <Compile Include="..\..\BIGGLOBAL\Utils\utilAc\acDWG2DWG.cs">
+      <Link>Utils\utilAc\acDWG2DWG.cs</Link>
+    </Compile>
+    <Compile Include="..\..\BIGGLOBAL\Utils\utilAc\acDynamicBlocks.cs">
+      <Link>Utils\utilAc\acDynamicBlocks.cs</Link>
+    </Compile>
+    <Compile Include="..\..\BIGGLOBAL\Utils\utilAc\acFiles.cs">
+      <Link>Utils\utilAc\acFiles.cs</Link>
+    </Compile>
+    <Compile Include="..\..\BIGGLOBAL\Utils\utilAc\acGeom.cs">
+      <Link>Utils\utilAc\acGeom.cs</Link>
+    </Compile>
+    <Compile Include="..\..\BIGGLOBAL\Utils\utilAc\acGrDraw.cs">
+      <Link>Utils\utilAc\acGrDraw.cs</Link>
+    </Compile>
+    <Compile Include="..\..\BIGGLOBAL\Utils\utilAc\acLayerUtil.cs">
+      <Link>Utils\utilAc\acLayerUtil.cs</Link>
+    </Compile>
+    <Compile Include="..\..\BIGGLOBAL\Utils\utilAc\acMisc.cs">
+      <Link>Utils\utilAc\acMisc.cs</Link>
+    </Compile>
+    <Compile Include="..\..\BIGGLOBAL\Utils\utilAc\acPline.cs">
+      <Link>Utils\utilAc\acPline.cs</Link>
+    </Compile>
+    <Compile Include="..\..\BIGGLOBAL\Utils\utilAc\acPlines.cs">
+      <Link>Utils\utilAc\acPlines.cs</Link>
+    </Compile>
+    <Compile Include="..\..\BIGGLOBAL\Utils\utilAc\acPoints.cs">
+      <Link>Utils\utilAc\acPoints.cs</Link>
+    </Compile>
+    <Compile Include="..\..\BIGGLOBAL\Utils\utilAc\acPurge.cs">
+      <Link>Utils\utilAc\acPurge.cs</Link>
+    </Compile>
+    <Compile Include="..\..\BIGGLOBAL\Utils\utilAc\acPurgeDgn.cs">
+      <Link>Utils\utilAc\acPurgeDgn.cs</Link>
+    </Compile>
+    <Compile Include="..\..\BIGGLOBAL\Utils\utilAc\acSSet.cs">
+      <Link>Utils\utilAc\acSSet.cs</Link>
+    </Compile>
+    <Compile Include="..\..\BIGGLOBAL\Utils\utilAc\acTables.cs">
+      <Link>Utils\utilAc\acTables.cs</Link>
+    </Compile>
+    <Compile Include="..\..\BIGGLOBAL\Utils\utilAc\acText.cs">
+      <Link>Utils\utilAc\acText.cs</Link>
+    </Compile>
+    <Compile Include="..\..\BIGGLOBAL\Utils\utilAc\acTransform.cs">
+      <Link>Utils\utilAc\acTransform.cs</Link>
+    </Compile>
+    <Compile Include="..\..\BIGGLOBAL\Utils\utilAc\acUcs.cs">
+      <Link>Utils\utilAc\acUcs.cs</Link>
+    </Compile>
+    <Compile Include="..\..\BIGGLOBAL\Utils\utilAc\acVisual.cs">
+      <Link>Utils\utilAc\acVisual.cs</Link>
+    </Compile>
+    <Compile Include="..\..\BIGGLOBAL\Utils\utilAc\acXData.cs">
+      <Link>Utils\utilAc\acXData.cs</Link>
+    </Compile>
+    <Compile Include="..\..\BIGGLOBAL\Utils\utilAc\acXRecord.cs">
+      <Link>Utils\utilAc\acXRecord.cs</Link>
+    </Compile>
+    <Compile Include="..\..\BIGGLOBAL\Utils\utilAc\acXrfefBinder.cs">
+      <Link>Utils\utilAc\acXrfefBinder.cs</Link>
+    </Compile>
+    <Compile Include="..\..\BIGGLOBAL\Utils\utilAc\CCWHub.cs">
+      <Link>Utils\utilAc\CCWHub.cs</Link>
+    </Compile>
+    <Compile Include="..\..\BIGGLOBAL\Utils\utilMath\utilMath.cs">
+      <Link>Utils\utilMath\utilMath.cs</Link>
+    </Compile>
+    <Compile Include="..\..\BIGGLOBAL\Utils\utilWin\xml\qvlpXmlLib.cs">
+      <Link>Utils\utilWin\xml\qvlpXmlLib.cs</Link>
+    </Compile>
+    <Compile Include="SetCommands.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SetCommands.resx</DependentUpon>
+    </Compile>
+    <Compile Include="SetPlugin.cs" />
+    <Compile Include="SetCommands.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\utilWin\files\FilesUtils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SetCommands.resx">
+      <DependentUpon>SetCommands.cs</DependentUpon>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>SetCommands.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
